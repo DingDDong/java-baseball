@@ -19,7 +19,6 @@ public class Result {
         else if(userNumber[0] == 3){
             System.out.println(userNumber[0] + "스트라이크");
             System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
-
         }
     }
 }

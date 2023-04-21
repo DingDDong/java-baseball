@@ -9,7 +9,8 @@ public class Flag {
     public int getFlag(){
         return flag;
     }
-    public int setFlag(int flag){
+    public void setFlag(int flag){
         this.flag = flag;
     }
 }
+

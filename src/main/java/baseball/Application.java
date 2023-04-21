@@ -1,8 +1,5 @@
 package baseball;
-import net.bytebuddy.asm.Advice;
-import camp.nextstep.edu.missionutils.Randoms;
 import java.util.List;
-import java.util.ArrayList;
 
 public class Application {
     public static void main(String[] args) {
@@ -10,11 +7,15 @@ public class Application {
 
         System.out.println("숫자 야구 게임을 시작합니다.");
         MakeNumber randomNumber = new MakeNumber();
-        List<Integer> computer = randomNumber.makeNumber();
         EnterNumber enterNumber = new EnterNumber();
-        enterNumber.enterNumber(computer);
-        Result resultPrinter = new Result();
+        ReStart chooseRetry = new ReStart();
+        Flag flag = new Flag(0);
+        flag.setFlag(0);
 
-
+        while(flag.getFlag() == 0){
+            List<Integer> computer = randomNumber.makeNumber();
+            enterNumber.enterNumber(computer);
+            chooseRetry.reStart();
+        }
     }
 }

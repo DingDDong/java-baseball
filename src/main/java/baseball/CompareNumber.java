@@ -1,8 +1,8 @@
 package baseball;
 import java.util.*;
 public class CompareNumber {
+    Integer[] strikeBall = new Integer[2];
     public void compareNumber(List<Integer> random, List<Integer> userNumber) {
-        Integer[] strikeBall = new Integer[2];
         int strike = 0;
         int ball = 0;
         for (int i = 0; i < 3; i++) {
