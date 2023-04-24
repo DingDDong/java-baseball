@@ -8,10 +8,8 @@ public class CompareNumber {
         for (int i = 0; i < 3; i++) {
             if (random.get(i).equals(userNumber.get(i))) { // 스트라이크인 경우에
                 strike += 1;
-                System.out.println(strike);
             } else if (random.contains(userNumber.get(i))) { // 볼인경우에
                 ball += 1;
-                System.out.println(ball);
             }
         }
         strikeBall[0] = strike;
