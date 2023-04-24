@@ -9,14 +9,15 @@ public class ReStart {
         String coin = Console.readLine();
         try {
             if (!coin.equals("2") && !coin.equals("1")) {
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("IllegalArgumentException");
             }
             else if (coin.equals("2")){
-                flag.setFlag(1);
+                flag.setFlag(2);
             }
         }
         catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
+            flag.setFlag(2);
         }
     }
 }

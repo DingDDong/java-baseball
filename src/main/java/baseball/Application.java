@@ -11,11 +11,14 @@ public class Application {
         ReStart chooseRetry = new ReStart();
         Flag flag = new Flag(0);
         flag.setFlag(0);
-
+        int i;
         while(flag.getFlag() == 0){
             List<Integer> computer = randomNumber.makeNumber();
-            enterNumber.enterNumber(computer);
-            chooseRetry.reStart();
+            i = 0;
+            i = enterNumber.enterNumber(computer);
+            if(i == 3) {
+                chooseRetry.reStart();
+            }
         }
     }
 }
