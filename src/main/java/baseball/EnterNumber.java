@@ -18,7 +18,7 @@ public class EnterNumber {
         catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
             flag.setFlag(2);
-            return 0; // exit 쓰지 말라했으니 어떤식으로 해결할지 생각해보기
+            return 0;
         }
         userNumber.clear();
         for (int i = 0; i < number.length(); i++) {

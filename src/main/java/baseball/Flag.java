@@ -1,7 +1,7 @@
 package baseball;
 
 public class Flag {
-    protected int flag;
+    static int flag;
 
     public Flag(int flag) {
         this.flag = flag;
