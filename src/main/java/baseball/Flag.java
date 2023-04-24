@@ -6,7 +6,6 @@ public class Flag {
     public Flag(int flag) {
         this.flag = flag;
     }
-
     public int getFlag() {
         return flag;
     }
