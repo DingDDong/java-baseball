@@ -6,17 +6,21 @@ public class Play {
         MakeNumber randomNumber = new MakeNumber();
         EnterNumber enterNumber = new EnterNumber();
         List<Integer> computer = new ArrayList<>();
+        List<Integer> user = new ArrayList<>();
+        CompareNumber compareNumber = new CompareNumber();
         ReStart chooseRetry = new ReStart();
+        StringTolist listNumber = new StringTolist();
         Flag flag = new Flag(0);
         flag.setFlag(0);
-        int i = 3;
+        int STRIKE = 3;
         while(flag.getFlag() == 0){
-            if(i == 3){
+            if(STRIKE == 3){
                 computer = randomNumber.makeNumber();
             }
-            i = 0;
-            i = enterNumber.enterNumber(computer);
-            if(i == 3) {
+            STRIKE = 0;
+            user = listNumber.toArraylist(enterNumber.enterNumber());
+            STRIKE = compareNumber.compareNumber(computer,user);
+            if(STRIKE == 3) {
                 chooseRetry.reStart();
             }
         }
