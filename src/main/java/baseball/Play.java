@@ -6,7 +6,7 @@ public class Play {
         GameStart start = new GameStart();
         start.gameStart();
         MakeNumber randomNumber = new MakeNumber();
-        EnterNumber enterNumber = new EnterNumber();
+        InputView inputView = new InputView();
         List<Integer> computerNumber = new ArrayList<>();
         List<Integer> userNumber;
         ResultCalculator compareNumber = new ResultCalculator();
@@ -18,7 +18,7 @@ public class Play {
             if(strike == 3){
                 computerNumber = randomNumber.makeNumber();
             }
-            userNumber = listNumber.toArrayList(enterNumber.enterNumber());
+            userNumber = listNumber.toArrayList(inputView.inputView());
             strike = compareNumber.resultCalculator(computerNumber,userNumber);
             if(strike == 3) {
                 flag = chooseRetry.reStart(flag);

@@ -14,7 +14,7 @@ public class ResultCalculator {
         }
         strikeBallList.add(0, strike);
         strikeBallList.add(1, ball);
-        return Result.result(strikeBallList);
+        return OutputView.outputView(strikeBallList);
     }
 }
 

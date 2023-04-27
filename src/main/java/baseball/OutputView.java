@@ -1,9 +1,8 @@
 package baseball;
 import java.util.List;
-import camp.nextstep.edu.missionutils.Console;
 
-public class Result {
-    public static int result(List<Integer> userNumber) {
+public class OutputView {
+    public static int outputView(List<Integer> userNumber) {
         if(userNumber.get(0) == 0 && userNumber.get(1) == 0){
             System.out.println("낫싱");
         }
