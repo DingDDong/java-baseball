@@ -16,8 +16,6 @@ public class ReStart {
             return tableValue;
         }
     }
-    Flag flag = new Flag(0);
-
     public boolean reStart(boolean flag) {
         RestartEnum restart = RestartEnum.valueOf("RESTART");
         RestartEnum exit = RestartEnum.valueOf("EXIT");
@@ -34,4 +32,3 @@ public class ReStart {
         return flag;
     }
 }
-
